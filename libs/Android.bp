@@ -1,0 +1,5 @@
+//prebuilt zixing_core.jar
+java_import {
+    name: "zixing_core_jar",
+    jars: ["zixing_core.jar"],
+}

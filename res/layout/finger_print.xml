@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/finger_detect_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop_text3_height"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip"
+        android:text="@string/finger_print_init"
+        android:textSize="@dimen/tips_text_size"
+        android:textColor="#ffff0000" />
+
+    <Button
+        android:id="@+id/finger_detect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="10dip"
+        android:text="@string/finger_detect" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip"
+        android:textSize="@dimen/tips_text_size" />
+
+    <Button
+        android:id="@+id/retest_btn"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dip"
+        android:text="@string/retest"
+        android:textSize="25sp"
+        android:visibility="gone" >
+    </Button>
+</LinearLayout>

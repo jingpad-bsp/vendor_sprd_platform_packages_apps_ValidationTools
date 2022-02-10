@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+	<TextView
+        android:id="@+id/tv_tips"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="36sp"
+		android:text="@string/physical_keyboard_test_tip1" />
+
+
+   <Button
+       android:id="@+id/button_number1"
+       android:layout_width="180dip"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="@string/physical_keyboard_test_number1"
+       android:focusable="false"
+       android:clickable="false" />
+
+   <Button
+       android:id="@+id/button_number2"
+       android:layout_width="180dip"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="@string/physical_keyboard_test_number2"
+       android:focusable="false"
+       android:clickable="false" />
+
+   <Button
+       android:id="@+id/button_number3"
+       android:layout_width="180dip"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="@string/physical_keyboard_test_number3"
+       android:focusable="false"
+       android:clickable="false" />
+
+   <Button
+       android:id="@+id/button_charater1"
+       android:layout_width="180dip"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="@string/physical_keyboard_test_charater1"
+       android:focusable="false"
+       android:clickable="false" />
+
+   <Button
+       android:id="@+id/button_charater2"
+       android:layout_width="180dip"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="@string/physical_keyboard_test_charater2"
+       android:focusable="false"
+       android:clickable="false" />
+
+   <Button
+       android:id="@+id/button_space"
+       android:layout_width="180dip"
+       android:layout_height="wrap_content"
+       android:textSize="20sp"
+       android:text="@string/physical_keyboard_test_space"
+       android:focusable="false"
+       android:clickable="false" />
+
+</LinearLayout>

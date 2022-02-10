@@ -1,0 +1,29 @@
+android_app {
+    name: "ValidationTools",
+    static_libs: [
+        "vendor.sprd.hardware.fingerprintmmi-V1.0-java",
+        "zixing_core_jar",
+    ],
+    libs: [
+        "org.apache.http.legacy",
+        "telephony-common",
+    ],
+    jni_libs: [
+        "libjni_fingerprint",
+        "libjni_encryptionChip"
+    ],
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+    ],
+    resource_dirs: ["res"],
+    certificate: "platform",
+    platform_apis: true,
+    aaptflags: ["--keep-raw-values"],
+    optimize: {
+        enabled: false,
+    },
+    dex_preopt: {
+        enabled: true,
+    },
+}

@@ -1,0 +1,87 @@
+cc_library_shared {
+    name: "libjni_fingerprint",
+    compile_multilib: "first",
+    srcs: [
+        "src/jniFingerutils.cpp",
+    ],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+    ],
+    cflags: [
+        "-O3",
+        "-fvisibility=hidden",
+        "-mfloat-abi=softfp",
+        "-mfpu=neon",
+        "-pie",
+        "-fPIE",
+        "-DNDK",
+    ],
+    cppflags: [
+        "-fexceptions",
+    ],
+}
+
+cc_library_shared {
+    name: "libjni_encryptionChip",
+    compile_multilib: "first",
+    srcs: [
+        "src/jniencryptionChip.cpp",
+    ],
+    defaults: ["validation_defaults"],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+    ],
+}
+
+
+cc_library_shared {
+    name: "libjni_validationtools",
+    compile_multilib: "first",
+    srcs: [
+        "src/jniutils.cpp",
+    ],
+    defaults: ["validation_defaults"],
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+    ],
+}
+
+/// add start
+bootstrap_go_package {
+    // name and pkgPath need to  according to your module
+    name: "soong-validation_defaults",
+    pkgPath: "android/soong/validation_defaults",
+    deps: [
+        "blueprint",
+        "blueprint-pathtools",
+        "soong",
+        "soong-android",
+        "soong-cc",
+        "soong-genrule",
+    ],
+    srcs: [
+          // include new add .go file
+          "validation_defaults.go",
+    ],
+    pluginFor: ["soong_build"],
+}
+
+// jni_utils is a module
+validation_defaults {
+    name: "validation_defaults_module",
+}
+/// add end
+
+cc_defaults {
+    name: "validation_defaults",
+    defaults: ["validation_defaults_module"],
+    sanitize: {
+        misc_undefined: ["integer"],
+    },
+}

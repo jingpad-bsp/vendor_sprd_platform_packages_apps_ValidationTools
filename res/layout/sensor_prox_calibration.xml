@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/test_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff0000"
+        android:textSize="@dimen/tips_text_size"
+        android:text="@string/prox_sensor_calibration"
+        android:layout_marginTop="420dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginLeft="50dip" />
+    <Button
+        android:id="@+id/prox_auto_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="@string/prox_calibration_button_auto"
+        android:textSize="25sp"
+        android:visibility="gone" >
+    </Button>
+    <Button
+        android:id="@+id/prox_manual_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="@string/prox_calibration_button_manual"
+        android:textSize="25sp" >
+    </Button>
+    <Button
+        android:id="@+id/auto_retest_btn"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="@string/auto_retest"
+        android:textSize="25sp"
+        android:visibility="gone" >
+    </Button>
+    <Button
+        android:id="@+id/manual_retest_btn"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="@string/manual_retest"
+        android:textSize="25sp"
+        android:visibility="gone" >
+    </Button>
+
+</LinearLayout>

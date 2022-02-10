@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BUG479359 zhijie.yang 2016/5/5 MMI add a calibration -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop_text2_height"
+        android:textSize="@dimen/tips_text_size"
+        android:text="@string/tp_rawdata_info"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:padding="100dip" >
+
+        <TextView
+            android:id="@+id/result_tp_rawdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dip"
+            android:text="@string/statr_test"
+            android:textSize="25sp" >
+        </Button>
+        <Button
+            android:id="@+id/retest_btn"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dip"
+            android:text="@string/retest"
+            android:textSize="25sp"
+            android:visibility="gone" >
+        </Button>
+    </RelativeLayout>
+</LinearLayout>

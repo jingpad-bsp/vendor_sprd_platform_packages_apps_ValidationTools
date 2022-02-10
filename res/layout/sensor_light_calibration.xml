@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BUG479359 zhijie.yang 2016/5/5 MMI add a calibration -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/result_sensor_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginLeft="50dip"
+        android:textSize="@dimen/tips_text_size"
+        android:text="@string/light_sensor_calibration_tips"
+        android:textColor="#ffff0000" />
+
+    <Button
+        android:id="@+id/start_test_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="@string/start_light_calibration"
+        android:textSize="25sp" >
+    </Button>
+    <Button
+        android:id="@+id/retest_btn"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="@string/retest"
+        android:textSize="25sp"
+        android:visibility="gone" >
+    </Button>
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="@string/start_checkout"
+        android:textSize="25sp"
+        android:visibility="gone" >
+    </Button>
+</LinearLayout>

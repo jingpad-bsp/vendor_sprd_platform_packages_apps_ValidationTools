@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/current_action_textView"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:layout_alignParentTop="true"
+        android:textSize="30dip"/>
+
+    <LinearLayout
+        android:id="@+id/buttonslinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/lookback_bottom_size"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/ring_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ring_test"
+                android:enabled = "false" />
+
+            <RadioButton
+                android:id="@+id/vbrate_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/vibrate_test"
+                android:enabled = "false" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
